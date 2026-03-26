@@ -1,5 +1,23 @@
 # Xonsh Change Log
 
+## [0.22.9](https://github.com/xonsh/xonsh/compare/0.22.8...0.22.9) (2026-03-26)
+
+
+### Features
+
+* Added support for subprocess substitution in the middle of a string e.g. `echo prefix_$(whoami)_suffix` or `echo path/$([@lines](https://github.com/lines) echo '1\n2').suffix` ([#6166](https://github.com/xonsh/xonsh/issues/6166)) ([a229266](https://github.com/xonsh/xonsh/commit/a229266172dbf8afe9b9bfb266a0ccc1f8cf5fc0))
+
+
+### Bug Fixes
+
+* Env: Fix empty path in PATH ([#6169](https://github.com/xonsh/xonsh/issues/6169)) ([ebf58b5](https://github.com/xonsh/xonsh/commit/ebf58b5cf797300e3a5bffd022b7f670ec7434cf))
+* Env: Fix EnvPath (e.g. PATH) mirroring to `os.environ` in case of update and `UPDATE_OS_ENVIRON=True` ([#6171](https://github.com/xonsh/xonsh/issues/6171)) ([112514a](https://github.com/xonsh/xonsh/commit/112514a09bd508807790f04f8953e287f16d9791))
+* **install:** update mamba git+extras install docs and script ([#6151](https://github.com/xonsh/xonsh/issues/6151)) ([c7d393f](https://github.com/xonsh/xonsh/commit/c7d393fa7fd68b9157c5298c289d8a02912be280))
+* Parser: fix regress with parsing `a#b;c` ([#6168](https://github.com/xonsh/xonsh/issues/6168)) ([fb1be47](https://github.com/xonsh/xonsh/commit/fb1be479875b7b0401bfba247b6db4160312839a))
+* **Tests:** Fix unwanted output and exceptions from tests ([#6178](https://github.com/xonsh/xonsh/issues/6178)) ([322f1ca](https://github.com/xonsh/xonsh/commit/322f1ca6f44914ba2de946df1d31e969cce08431))
+* Windows: fix unstable tests ([#6163](https://github.com/xonsh/xonsh/issues/6163)) ([d3b22b9](https://github.com/xonsh/xonsh/commit/d3b22b91f53709089b747f3aa0c833651fb0bd45))
+* **Windows:** Fixed CDLL exception in MSYS2 when running xonsh ([#6176](https://github.com/xonsh/xonsh/issues/6176)) ([e8427b8](https://github.com/xonsh/xonsh/commit/e8427b8da3bd1449e5a6e687f9c8634e8685c6f3))
+
 ## [0.22.8](https://github.com/xonsh/xonsh/compare/0.22.7...0.22.8) (2026-03-17)
 
 
